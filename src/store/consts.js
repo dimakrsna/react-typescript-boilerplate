@@ -1,0 +1,2 @@
+export const TEXT_VALUES = 'TEXT_VALUES'
+export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE'
