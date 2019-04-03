@@ -4,12 +4,12 @@ import { Dispatch } from 'redux'
 
 import { changeInputValueAction } from '../actions/changeInputValueAction' 
 
-type Props = {
+interface IProps {
     dispatch: Dispatch<{}>;
     inputValue: string
 }
 
-class InputContainer extends React.Component<Props> {
+class InputContainer extends React.Component<IProps> {
     inputHandler = (event: any) => {
         this.props.dispatch(changeInputValueAction(event.target.value))
     }
