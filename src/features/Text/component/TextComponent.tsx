@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-interface IProps {
+type Props = {
     outputText: string[]
 }
 
-const TextComponent: React.FC<IProps> = (props) => {
+const TextComponent: React.FC<Props> = (props) => {
     return <div className="">{
         props.outputText.map((item, index) => {
             return <p key={`value-${index}`}>{item}</p>

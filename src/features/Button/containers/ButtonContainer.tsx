@@ -5,12 +5,12 @@ import { Dispatch } from 'redux'
 import { getTextValueAction } from './../actions/getTextValueAction'
 import { changeInputValueAction } from './../../Input/actions/changeInputValueAction'
 
-interface IProps {
+type Props = {
     dispatch: Dispatch<{}>;
     inputValue: string
 }
 
-class ButtonContainer extends React.Component<IProps>{
+class ButtonContainer extends React.Component<Props>{
 
     btnHandler = () => {
         this.props.dispatch(getTextValueAction([this.props.inputValue]))
