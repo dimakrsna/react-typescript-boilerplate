@@ -1,9 +1,11 @@
 import * as React from "react"
 
 import { TitleComponent } from './Title/components/TitleComponent'
-import Button from './Button/containers/ButtonContainer'
+import ButtonContainer from './Button/containers/ButtonContainer'
 import TextComponent from './Text/component/TextComponent'
 import InputContainer from './Input/containers/InputContainer'
+
+import { NoTSExample } from './NoTSExample.d'
 
 export class App extends React.Component {
 
@@ -12,8 +14,9 @@ export class App extends React.Component {
             <React.Fragment>
                 <TitleComponent />
                 <InputContainer />
-                <Button />
+                <ButtonContainer />
                 <TextComponent />
+                <NoTSExample />
             </React.Fragment>
         )
     }

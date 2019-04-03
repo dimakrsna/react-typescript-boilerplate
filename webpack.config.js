@@ -15,17 +15,12 @@ module.exports = {
                 loader: "ts-loader",
                 exclude: /node_modules/
             },
-            // { 
-            //     enforce: "pre", 
-            //     test: /\.js$/, 
-            //     loader: "source-map-loader" 
-            // },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                  presets:[ 'es2015', 'react', 'stage-2' ]
+                    presets: ['es2015', 'react', 'stage-2']
                 }
             },
             {
