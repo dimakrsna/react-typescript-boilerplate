@@ -1,13 +1,13 @@
-import * as React from "react"
+import React, { Component } from "react"
 
-import { TitleComponent } from './Title/components/TitleComponent'
-import ButtonContainer from './Button/containers/ButtonContainer'
-import TextComponent from './Text/component/TextComponent'
-import InputContainer from './Input/containers/InputContainer'
+import { TitleComponent } from './Title/components/title-component'
+import ButtonContainer from './Button/containers/button-container'
+import TextComponent from './Text/component/text-component'
+import InputContainer from './Input/containers/input-container'
 
 import { NoTSExample } from './NoTSExample.d'
 
-export class App extends React.Component {
+export class App extends Component {
 
     render() {
         return (

@@ -1,16 +1,16 @@
-import * as React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux'
 
-import { getTextValueAction } from './../actions/getTextValueAction'
-import { changeInputValueAction } from './../../Input/actions/changeInputValueAction'
+import { getTextValueAction } from '../actions/getTextValueAction'
+import { changeInputValueAction } from '../../Input/actions/changeInputValueAction'
 
 interface IProps {
     dispatch: Dispatch<{}>;
     inputValue: string
 }
 
-class ButtonContainer extends React.Component<IProps>{
+class ButtonContainer extends Component<IProps>{
 
     btnHandler = () => {
         this.props.dispatch(getTextValueAction([this.props.inputValue]))

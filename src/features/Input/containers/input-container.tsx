@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux' 
 
@@ -9,7 +9,7 @@ interface IProps {
     inputValue: string
 }
 
-class InputContainer extends React.Component<IProps> {
+class InputContainer extends Component<IProps> {
     inputHandler = (event: any) => {
         this.props.dispatch(changeInputValueAction(event.target.value))
     }
